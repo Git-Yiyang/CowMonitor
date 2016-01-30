@@ -1,0 +1,4 @@
+*/3 * * * * /bin/sh /home/root/netgate_script.sh >> /home/root/netgate_script.log 2>& 1
+7 * * * * /bin/sh /home/root/netgate_start.sh >> /home/root/netgate_run.log 2>& 1
+2 1 * * * /bin/sh /home/root/netgate_backup.sh >> /home/root/netgate_backup.log 2>& 1
+#8 2 * * * /bin/sh netgate_reboot.sh >> /home/root/netgate_system_shutdown.log 2>& 1
